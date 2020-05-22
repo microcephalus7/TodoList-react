@@ -1,6 +1,6 @@
 // 틀
 import React from "react";
-import "./TodoListTemplate.css";
+import "./TodoListTemplate.scss";
 
 const TodoListTemplate = ({ form, children }) => {
   return (
