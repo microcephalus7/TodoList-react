@@ -1,5 +1,6 @@
 import React from "react";
 import "./Form.scss";
+// import props
 const Form = ({ value, onChange, onCreate, onKeyPress }) => {
   return (
     <div className="form">
@@ -11,5 +12,4 @@ const Form = ({ value, onChange, onCreate, onKeyPress }) => {
     </div>
   );
 };
-
 export default Form;
