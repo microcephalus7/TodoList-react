@@ -1,18 +1,15 @@
+// 틀
 import React from "react";
 import "./TodoListTemplate.scss";
-
-// 컴포넌트 props 화
-const TodoListTemplate = ({ form, children }) => {
+const TodoListTemplate = ({ form, palette, children }) => {
   return (
-    /* Template 화 */
     <main className="todo-list-template">
-      {/* List */}
       <div className="title">오늘 할 일</div>
-      {/* 추가 부분 */}
-      <section className="form-wrappper">{form}</section>
-      {/* List 부분 */}
+      <section className="palette-wrapper">{palette}</section>
+      <section className="form-wrapper">{form}</section>
       <section className="todos-wrapper">{children}</section>
     </main>
   );
 };
+
 export default TodoListTemplate;
