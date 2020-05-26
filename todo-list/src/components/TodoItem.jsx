@@ -8,7 +8,7 @@ class TodoItem extends Component {
 
   render() {
     // text : todo내용, checked : 체크박스 상태, id : todo 의 고유 아이디, onToggle : 체크박스를 키고 끄는 함수, onRemove : 아이템을 삭제시키는 함수
-    const { text, checked, id, onToggle, onRemove } = this.props;
+    const { text, checked, id, onToggle, onRemove, color } = this.props;
 
     return (
       <div className="todo-item" onClick={() => onToggle(id)}>
@@ -22,7 +22,7 @@ class TodoItem extends Component {
           &times;
         </div>
         {/* CSS 유동적 설정 위해 템플릿 리터럴 사용 */}
-        <div className={`todo-text ${checked && "checked"}`}>
+        <div style={{ color }} className={`todo-text ${checked && "checked"}`}>
           <div>{text}</div>
         </div>
         {checked && <div className="check-mark">&#x2713;</div>}
