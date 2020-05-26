@@ -5,15 +5,14 @@
   cursor: pointer;
   transition: all 0.15s;
   user-select: none;
+  font-size: 2rem;
   & :hover {
-    background: #e3fafc;
-    & .remove {
+    background: #f1f3f5;
+    &.remove {
       opacity: 1;
     }
   }
-  + .todo-item {
-    border-top: 1px solid #f1f3f5;
-  }
+
   .remove {
     margin-right: 1rem;
     color: #e64980;
@@ -30,10 +29,10 @@
     color: #adb5bd;
   }
   .check-mark {
-    font-size: 1.5rem;
-    line-height: 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
     margin-left: 1rem;
-    color: #3bc9db;
+    color: #af7eeb;
     font-weight: 800;
   }
 }

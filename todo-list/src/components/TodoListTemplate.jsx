@@ -8,7 +8,7 @@ const TodoListTemplate = ({ form, children, palette }) => {
   return (
     /* Template 화 */
     <main className="todo-list-template">
-      <div className="title">오늘 할 일</div>
+      <div className="title">Todo List</div>
       {/* 팔레트 부분 */}
       <div className="palette-wrapper">{palette}</div>
       {/* 추가 부분 */}

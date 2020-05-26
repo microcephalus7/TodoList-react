@@ -4,8 +4,8 @@
 }
 
 .color {
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
   opacity: 0.5;
   transition: all 0.2s;
   cursor: pointer;
@@ -21,5 +21,5 @@
 }
 
 .color + .color {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
